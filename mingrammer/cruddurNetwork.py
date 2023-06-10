@@ -65,10 +65,3 @@ with Diagram("Cruddur Network Diagram", show=True, direction="TB"):
     routeTable << Edge(style="dashed", label="local (10.0.0.0/32)") << vpcRouter
 
     internetGateway << Edge(style="dashed", label="0.0.0.0/32") << routeTable
-
-    with Cluster(label="foo", graph_attr={"bgcolor": "red"}):
-        Blank("bar")
-        [User("Lee"), User("Andrew")]
-        holly = User("Holly")
-        kate = User("Kate")
-        holly - kate
