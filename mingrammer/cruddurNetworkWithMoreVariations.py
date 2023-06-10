@@ -7,7 +7,7 @@ from diagrams.aws.network import PrivateSubnet, PublicSubnet, RouteTable, VPCRou
 from diagrams.aws.general import InternetGateway
 from diagrams.generic.blank import Blank
 from diagrams.onprem.client import User, Client
-
+from diagrams.aws.management import CloudformationTemplate
 
 with Diagram(
     "Cruddur Network Diagram - 10 June 2023",
@@ -35,7 +35,8 @@ with Diagram(
     #         Blank("")
 
     with Cluster(
-        "CrdNetVPC", graph_attr={"fontsize": "18", "margin": "10", "bgcolor": "white"}
+        "CrdNetVPC",
+        graph_attr={"fontsize": "18", "margin": "10", "bgcolor": "white"},
     ):
         with Cluster(
             "ap-southeast-2c",
