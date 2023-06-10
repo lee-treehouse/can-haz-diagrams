@@ -10,7 +10,7 @@ from diagrams.onprem.client import User, Client
 
 
 with Diagram(
-    "Cruddur Network Diagram",
+    "Cruddur Network Diagram with Variations",
     show=True,
     direction="TB",
     # labelloc https://graphviz.org/docs/attrs/labelloc/
